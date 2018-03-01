@@ -1,0 +1,152 @@
+body{
+    font: 16px/18px "FiraSans-Light";
+}
+
+.header{
+    height: 90px;
+    background-color: #8cc34b;
+    box-shadow: 0px 10px 15px #ccc;
+}
+
+.header .user{
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header .user .user__photo img{
+    margin-left: 100px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+
+.header .user .user__info{
+    margin-left: 20px;
+}
+
+.header .user .user__info p{
+    font: 1.3em/1.4em "FiraSans-Medium";
+    color: #fff;
+}
+
+.header .user .user__info a{
+    font: .875em/1em "FiraSans-Medium";
+    color: #e1eed4;
+}
+
+.header .user .user__info a:hover{
+    font: 1em/1.125em "FiraSans-Medium";
+    text-decoration: none;
+}
+
+.header .social{
+    display: flex;
+    margin-right: 100px;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header .social li a i{
+    margin: 0 10px 0 10px;
+    font-size: 45px;
+    line-height: 90px;
+    color: #e1eed4;
+}
+
+.header .social li a i:hover{
+    color: #fff;
+}
+
+.aboutStudent{
+    min-height: 475px;
+    padding: 75px 0 95px 0;
+}
+
+.aboutStudent .aboutStudent__head,
+.courses .courses__head{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.aboutStudent .aboutStudent__head p,
+.courses .courses__head h1{
+    font: 2.6em/1.5em "FiraSans-Medium";
+}
+
+.aboutStudent .aboutStudent__head span,
+.courses__head span{
+    font: 1.3em/1.4em "FiraSans-Light";
+    color: #727272;
+}
+
+.aboutStudent .aboutStudent__info p,
+.aboutStudent .aboutStudent__expInfo p{
+    font: 1.3em/1.3em "FiraSans-Regular";
+}
+
+.aboutStudent .aboutStudent__info span,
+.aboutStudent .aboutStudent__expInfo span{
+    font: .875em/1em "FiraSans-Light";
+    color: #727272;
+}
+
+.courses{
+    padding: 75px 0 100px 0;
+    background: url("../img/gplaypattern.png") repeat;
+}
+
+.courses .courses__type{
+    margin-bottom: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #ccc;
+    cursor: pointer;
+}
+
+.courses .courses__type img{
+    width: 100%;
+}
+
+.courses .courses__type h3{
+    margin: 20px;
+    font: 1.3em/1.4em "FiraSans-Regular";
+    color: #8cc34b;
+}
+
+.courses .courses__type p{
+    margin: 0 20px 0 20px;
+    font: .875em/1em "FiraSans-Light";
+    color: #727272;
+}
+
+.courses .courses__type span{
+    display: block;
+    margin: 30px 20px 10px 20px;
+    font: .875em/1em "FiraSans-Light";
+    color: #b6b6b6;
+}
+
+.courses .courses__type a{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font: 1.1em/3.75em "FiraSans-Regular";
+    color: #727272;
+    background-color: #f6f7f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background-color: #212121;
+}
+
+.footer p{
+    font: .875em/2.2em "FiraSans-Regular";
+    color: #fff;
+    text-align: center;
+}
