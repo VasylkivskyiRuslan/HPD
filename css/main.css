@@ -62,6 +62,8 @@ body{
 }
 
 .aboutStudent{
+    display: flex;
+    flex-wrap: wrap;
     min-height: 475px;
     padding: 75px 0 95px 0;
 }
@@ -83,10 +85,14 @@ body{
     color: #727272;
 }
 
-.aboutStudent .aboutStudent__img img{
-     width: 100%;
- }
+.aboutStudent .aboutStudent__img,
+.aboutStudent .aboutStudent__expImg{
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+}
 
+.aboutStudent .aboutStudent__img img,
 .aboutStudent .aboutStudent__expImg img{
     width: 100%;
 }

@@ -10,11 +10,6 @@
     .header .social{
         margin-right: 50px;
     }
-
-    .aboutStudent .aboutStudent__img img,
-    .aboutStudent .aboutStudent__expImg img{
-        margin-top: 50px;
-    }
 }
 
 @media screen and (max-width: 770px), screen and (max-device-width: 770px){
@@ -65,8 +60,19 @@
         list-style: none;
     }
 
+    .aboutStudent .aboutStudent__img img,
+    .aboutStudent .aboutStudent__expImg img{
+        width: 90%;
+    }
+
     .courses .courses__type:hover{
         transform: none;
     }
+}
 
+@media screen and (max-width: 425px), screen and (max-device-width: 425px){
+    .aboutStudent__img,
+    .aboutStudent__info{
+        margin-bottom: 30px;
+    }
 }
