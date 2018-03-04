@@ -1,5 +1,6 @@
 body{
     font: 16px/18px "FiraSans-Light";
+    overflow-x: hidden;
 }
 
 .header{
@@ -86,7 +87,14 @@ body{
     color: #727272;
 }
 
+.aboutStudent .info,
+.aboutStudent .expirience{
+    display: flex;
+    align-items: center;
+}
+
 .aboutStudent .info{
+    margin-bottom: 20px;
     position: relative;
     left: -2000px;
 }
@@ -96,16 +104,9 @@ body{
     right: -2000px;
 }
 
-.aboutStudent .aboutStudent__img,
+.aboutStudent .info .aboutStudent__img,
 .aboutStudent .aboutStudent__expImg{
-    display: flex;
-    align-items: center;
-    min-height: 200px;
-}
-
-.aboutStudent .aboutStudent__img img,
-.aboutStudent .aboutStudent__expImg img{
-    width: 100%;
+    margin: 0 20px 0 0;
 }
 
 .aboutStudent .aboutStudent__info p,
@@ -126,6 +127,8 @@ body{
 
 .courses .courses__type{
     margin-bottom: 70px;
+    position: relative;
+    bottom: -3000px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #ccc;

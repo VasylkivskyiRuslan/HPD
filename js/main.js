@@ -1,9 +1,10 @@
 (function($){
     $(document).ready(function(){
         $('.aboutStudent__head').fadeTo(2500, 1);
-        $('.courses__head').fadeTo(2500, 1);
         $('.info').animate({left: 0}, 1500);
         $('.expirience').animate({right: 0}, 2000);
+        $('.courses__head').fadeTo(6000, 1);
+        $('.courses__type').animate({top: 0}, 3000);
     });
 
     $( '.socialMobile ul' ).hide();
