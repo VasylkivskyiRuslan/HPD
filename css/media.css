@@ -1,0 +1,71 @@
+@media screen and (max-width: 995px), screen and (max-device-width: 995px){
+    .header .user .user__photo img{
+        margin-left: 50px;
+    }
+
+    .header .user .user__info p{
+        font: 1em/1.1em "FiraSans-Medium";
+    }
+
+    .header .social{
+        margin-right: 50px;
+    }
+
+    .aboutStudent .aboutStudent__img img,
+    .aboutStudent .aboutStudent__expImg img{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 770px), screen and (max-device-width: 770px){
+    .header .user .user__photo img{
+        margin-left: 5px;
+    }
+
+    .header .social{
+        margin-right: 5px;
+    }
+
+    .header .social{
+        display: none;
+    }
+
+    .header .social__mobile{
+        display: block;
+        text-align: center;
+        background-color: #8cc34b;
+    }
+
+    .header .social__mobile ul{
+        width: 80%;
+        padding-left: 0;
+        position: absolute;
+        z-index: 1;
+        background-color: #8cc34b;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0 10px 15px #ccc;
+    }
+
+    .header .social__mobile a i{
+        margin: 0 10px 0 10px;
+        font-size: 45px;
+        line-height: 90px;
+        color: #e1eed4;
+    }
+
+    .header .social__mobile a i:hover{
+        color: #fff;
+    }
+
+    .header .social__mobile ul{
+        list-style: none;
+    }
+
+    .courses .courses__type:hover{
+        transform: none;
+    }
+
+}
