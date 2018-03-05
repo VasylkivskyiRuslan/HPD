@@ -15,10 +15,17 @@ body{
     align-items: center;
 }
 
+.header .user .user__photo{
+    width: 26%;
+    height: 90px;
+    margin: 0;
+}
+
 .header .user .user__photo img{
-    margin-left: 100px;
+    margin: 5px 70px 5px 100px;
     border: 3px solid #fff;
     border-radius: 50px;
+    height: 90%;
 }
 
 .header .user .user__info{
@@ -162,18 +169,19 @@ body{
     color: #b6b6b6;
 }
 
-.courses .courses__type a{
-    display: block;
+.courses .courses__type button{
     width: 100%;
     height: 60px;
-    font: 1.1em/3.75em "FiraSans-Regular";
+    font: 1.1em/1.2em "FiraSans-Regular";
     color: #727272;
     background-color: #f6f7f2;
     text-align: center;
-    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
 }
 
-.courses .courses__type a:hover{
+.courses .courses__type button:hover{
     color: #fff;
     background-color: #8cc34b;
 }
@@ -185,6 +193,70 @@ body{
     z-index: 2;
     bottom: 0;
     background-color: #212121;
+}
+
+.modal .modal-dialog .content form{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal .modal-dialog .content .modal-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #8cc34b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal .modal-dialog .content .modal-header p{
+    width: 90%;
+    font: 1.5em/1.6em "FiraSans-Regular";
+    color: #fff;
+}
+
+.modal .modal-dialog .content .modal-header button{
+    font: 1.5em/1.6em "FiraSans-Regular";
+    color: #fff;
+}
+
+.modal .modal-dialog .content .modal-body p{
+    height: 85px;
+    background-color: #fff;
+    position: relative;
+}
+
+.modal .modal-dialog .content .modal-body p input,
+.modal .modal-dialog .content .modal-body p select{
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    border: 1px solid transparent;
+    border-bottom-color: #d6d6d6;
+    outline: none;
+}
+
+.modal .modal-dialog .content .modal-body p input:focus,
+.modal .modal-dialog .content .modal-body select:focus{
+    border-color: #8cc34b;
+}
+
+.modal .modal-dialog .content .modal-footer button{
+    width: 100%;
+    height: 60px;
+    font: 1.1em/1.2em "FiraSans-Regular";
+    color: #727272;
+    background-color: #f6f7f2;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.modal .modal-dialog .content .modal-footer button:hover{
+    color: #fff;
+    background-color: #8cc34b;
 }
 
 .footer p{

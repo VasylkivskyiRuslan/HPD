@@ -99,7 +99,7 @@
                         <h3>Основы JavaScript</h3>
                         <p>Курс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;60 уроков (9 месяев по 2 раза в неделю, продолжительностью 2 часа)</span>
-                        <a href="#">Записаться</a>
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#modal">Записаться</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -108,7 +108,7 @@
                         <h3>Основы JavaScript</h3>
                         <p>Курс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;60 уроков (9 месяев по 2 раза в неделю, продолжительностью 2 часа)</span>
-                        <a href="#">Записаться</a>
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#modal">Записаться</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -117,7 +117,7 @@
                         <h3>Основы JavaScript</h3>
                         <p>Курс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;60 уроков (9 месяев по 2 раза в неделю, продолжительностью 2 часа)</span>
-                        <a href="#">Записаться</a>
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#modal">Записаться</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -126,7 +126,7 @@
                         <h3>Основы JavaScript</h3>
                         <p>Курс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;60 уроков (9 месяев по 2 раза в неделю, продолжительностью 2 часа)</span>
-                        <a href="#">Записаться</a>
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#modal">Записаться</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -135,7 +135,7 @@
                         <h3>Основы JavaScript</h3>
                         <p>Курс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;60 уроков (9 месяев по 2 раза в неделю, продолжительностью 2 часа)</span>
-                        <a href="#">Записаться</a>
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#modal">Записаться</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -144,9 +144,49 @@
                         <h3>Основы JavaScript</h3>
                         <p>Курс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;60 уроков (9 месяев по 2 раза в неделю, продолжительностью 2 часа)</span>
-                        <a href="#">Записаться</a>
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#modal">Записаться</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="content">
+                <form action="form.php" method="post" id="contactFrm" name="contactFrm">
+                    <div class="modal-header">
+                        <p>Заполните Ваши данные:</p>
+                        <button class="close" type="button" data-dismiss="modal">X</button>
+                    </div>
+                    <!-- <input type="text" required="" placeholder="Ваше місто" value="" name="city" class="txt"> -->
+                    <div class="modal-body">
+                        <p hidden="">
+                            <input type="text" name="subj" value="Выпускной" hidden="">
+                        </p>
+                        <p>
+                            <input type="text" required="" placeholder="Ваше имя" value="" name="name" class="txt">
+                        </p>
+                        <p>
+                            <input type="text" required="" placeholder="Телефон" value="" name="phone" id="phone" class="txt">
+                        </p>
+                        <p>
+                            <select class="form-control" name="course" id="foo">
+                                <option value="" disabled selected>Виберите курс</option>
+                                <option value="front">Front-end (HTML5, CSS3, JS)</option>
+                                <option value="bach">PHP + MySql + JS</option>
+                                <option value="design">UI | UX Design</option>
+                                <option value="smm">Social media marketing (SMM)</option>
+                                <option value="seo">SEO</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="frontteens">IT teens (Для школьников)</option>
+                            </select>
+                        </p>
+                    </div>
+                    <!-- <textarea placeholder="Your Message" name="mess" type="text" class="txt_3"></textarea> -->
+                    <div class="modal-footer">
+                        <button class="btn btn-default txt2" name="submit" type="submit" data-dismiss="modal">Отправить</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
